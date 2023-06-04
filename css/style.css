@@ -1,0 +1,313 @@
+@charset "utf-8";
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+/* header */
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+.innerHeader{
+    width: 1300px;
+    margin: 0 auto;
+    margin: 50px 100px 20px;
+    box-sizing: border-box;
+    height: 110px;
+    overflow: hidden;
+}
+
+header h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 a{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .mid-box ul{
+    display: flex;
+}
+
+header nav .left-box a:first-child{
+    margin-right: 6px;
+}
+
+header nav .right-box a{
+    margin-right: 10px;
+}
+
+header nav .right-box a:last-child,
+header nav .mid-box ul li:last-child{
+    margin-right: none;
+}
+
+header nav .mid-box ul li{
+    margin-right: 30px;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+}
+
+header nav .mid-box ul li:nth-child(1),
+header nav .mid-box ul li:nth-child(2){
+    font-weight: 600;
+    color: #F586BB;
+}
+
+
+/* main section01 */
+#section01{
+    margin-bottom: 60px;
+}
+
+#section02 .prdList-group{
+    margin-bottom: 50px;
+}
+
+#section02 .prdList-group ul li .txt{
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#section02 .prdList-group ul li .txt a{
+    display: block;
+    margin-bottom: 4px;
+}
+
+#section02 .prdList-group ul li .txt>p{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+#section02 .prdList-group ul li .txt .color span{
+    float: left;
+    width: 10px;
+    height: 10px;
+    padding: 0 2px 2px 0;
+    margin: 10px 0;
+    border: 1px solid #e3e3e3;
+}
+
+#section02 .prdList-group ul li .txt .color span:first-child{
+    margin-right: 4px;
+}
+
+#section02 .prdList-group ul li .txt .color span:last-child{
+    background-color: #000000;
+}
+
+#section03 a{
+    display: block;
+    margin-bottom: 60px;
+}
+
+#section03 .article-box .top-txt p,#section03 .article-box .top-txt span{
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#section03 .article-box .top-txt p:first-child{
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+#section03 .article-box .top-txt p:last-child{
+    font-size: 80px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: -1px;
+    font-family: 'roboto';
+    margin-bottom: 60px;
+}
+
+#section03 .article-box .img-List .img-group a img{
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+}
+
+#section03 .article-box .bottom-txt{
+    text-align: center;
+}
+
+#section03 .article-box .bottom-txt p:nth-child(1){
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+#section03 .article-box .bottom-txt p:nth-child(2){
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 4px;
+}
+
+#section03 .article-box .bottom-txt p:nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#section03 .article-box .btn{
+    margin: 10px;
+}
+
+#section03 .article-box .btn>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#section03 .article-box .btn>a button{
+    padding: 10px 30px 10px 10px;
+    background: #fff;
+    border: 1px solid #e3e3e3;
+}
+
+#section03 .article-box .btn>a img{
+    position: absolute;
+    margin-left: 40px;
+}
+
+#section05 {
+    margin: 0 0 90px 0;
+    background: #000;
+}
+
+#section05 ul li{
+    border: 10px solid #000;
+    border-bottom: none;
+}
+
+#section05 ul li .txt p:nth-child(1){
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    letter-spacing: -1px;
+    display: none;
+}
+
+#section05 ul li .txt p:nth-child(2){
+    font-size: 14px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    margin-top: 10px;
+    display: none;
+}
+
+#section05 ul li .txt button{
+    width: 100%;
+    padding: 4px 8px;
+    background: #000;
+    color: #fff;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#section06 .img-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 80px;
+}
+
+#section06 .img-group a{
+    display: block;
+    width: 20%;
+}
+
+footer{
+    padding:  80px 80px 40px;
+}
+
+footer .top-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+footer .top-group>a{
+    display: block;
+    width: 20%;
+}
+
+footer .top-group .untact-box p:first-child,
+footer .top-group .call p:first-child{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform:uppercase;
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
+}
+
+footer .top-group .untact-box p:last-child,
+footer .top-group .call p:last-child{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(159, 159, 159);
+}
+
+footer .top-group .sns-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer .top-group .sns-group a{
+    margin-right: 20px;
+    display: block;
+    width: 24px;
+}
+
+footer .top-group .sns-group a:last-child{
+    margin-right: 0;
+}
+
+footer .bottom-group p{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color:rgb(85, 85, 85);
+}
