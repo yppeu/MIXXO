@@ -88,6 +88,44 @@ header nav .mid-box ul li:nth-child(2){
     color: #F586BB;
 }
 
+header nav .menu_box{
+    position: fixed;
+    top: 180px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background: rgba(0, 0, 0, 0.5); */
+    background: #fff;
+    border-top: 1px solid #e3e3e3;
+    z-index: 999;
+    display: none;
+}
+
+header nav .menu_box .menu_open>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+header nav .menu_box .menu_open>ul li{
+    margin-right: 62px;
+    margin-bottom: 20px;
+}
+
+header nav .menu_box .menu_open>ul>li>a{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+header nav .menu_box .menu_open>ul>li ul>li>a{
+    font-size: 14px;
+    letter-spacing: -0.5px;
+}
+
 
 /* main section01 */
 #section01{
@@ -143,18 +181,41 @@ header nav .mid-box ul li:nth-child(2){
 }
 
 #section03 .article-box .top-txt p:first-child{
-    font-size: 40px;
+    font-size: 30px;
+    color: #00000090;
     text-align: center;
     letter-spacing: -1px;
+    transform: translate(0,-30px);
+    transition: all 0.45s ease;
+    opacity: 0;
 }
 
 #section03 .article-box .top-txt p:last-child{
-    font-size: 80px;
+    font-size: 86px;
     font-weight: 300;
     text-align: center;
     letter-spacing: -1px;
     font-family: 'roboto';
     margin-bottom: 60px;
+    transform: translate(0,-30px);
+    transition: all 0.45s ease;
+    opacity: 0;
+}
+
+#section03.active .article-box .top-txt p:first-child{
+    opacity: 1;
+    /* 다시 제자리 */
+    transform: translate(0,0);
+    /* 천천히 진행되다가 나중에 조금 빨라졌다 다시 천천히 진행되는 텐션 */
+    transition: all 0.45s ease-in-out;
+}
+
+#section03.active .article-box .top-txt p:last-child{
+    opacity: 1;
+    /* 다시 제자리 */
+    transform: translate(0,0);
+    /* 천천히 진행되다가 나중에 조금 빨라졌다 다시 천천히 진행되는 텐션 */
+    transition: all 1.5s ease-in-out;
 }
 
 #section03 .article-box .img-List .img-group a img{
@@ -183,8 +244,10 @@ header nav .mid-box ul li:nth-child(2){
 }
 
 #section03 .article-box .bottom-txt p:nth-child(3){
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
+    letter-spacing: 1px;
+    color: #000000;
     font-family: 'Shadows Into Light', cursive;
 }
 
@@ -217,6 +280,7 @@ header nav .mid-box ul li:nth-child(2){
 
 #section05 ul li{
     border: 10px solid #000;
+    border-top: 40px solid #000;
     border-bottom: none;
 }
 
@@ -239,7 +303,7 @@ header nav .mid-box ul li:nth-child(2){
 
 #section05 ul li .txt button{
     width: 100%;
-    padding: 4px 8px;
+    padding: 10px 8px;
     background: #000;
     color: #fff;
     font-family: 'Shadows Into Light', cursive;
@@ -254,7 +318,16 @@ header nav .mid-box ul li:nth-child(2){
 
 #section06 .img-group a{
     display: block;
-    width: 20%;
+    max-width: 20%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+#section06 .img-group a img:hover{
+    width: 100%;
+    height: auto;
+    transition: all 0.3s linear;
+    transform: scale(1.2);
 }
 
 footer{
